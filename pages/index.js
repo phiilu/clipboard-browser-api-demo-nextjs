@@ -8,7 +8,7 @@ function ContentToCopy() {
   return (
     <div className="prose">
       <h2>
-        Here is an example image and text to copy{" "}
+        Here is an example image and text to copy &amp; paste{" "}
         <span role="img" aria-label="doggo">
           🐕
         </span>
