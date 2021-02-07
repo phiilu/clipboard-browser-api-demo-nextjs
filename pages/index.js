@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Head from "next/head";
-import hotkeys from "hotkeys-js";
 import * as React from "react";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -203,8 +202,6 @@ export default function Home() {
   const [pastes, setPastes] = React.useState(null);
   const [error, setError] = React.useState(null);
 
-  console.log(pastes);
-
   function addToPastes(newPaste) {
     setPastes((prev) => {
       if (!prev) {
@@ -250,14 +247,16 @@ export default function Home() {
       });
       return;
     }
-    hotkeys("ctrl+v,command+v", (event) => {
-      event.preventDefault();
-      console.log("copy");
+
+    function handlePasteEvent(event) {
       handleClipboard();
-    });
+      event.preventDefault();
+    }
+
+    document.addEventListener("paste", handlePasteEvent);
 
     return () => {
-      hotkeys.unbind();
+      document.removeEventListener("paste", handlePasteEvent);
     };
   }, []);
 
