@@ -83,7 +83,7 @@ function EmptyBoard() {
       </div>
       <div className="space-y-4 prose">
         <p>
-          A simple app to demonstrate the{" "}
+          A simple Clipboard Manager demo app to demonstrate the{" "}
           <a
             target="_blank"
             rel="noreferrer noopener"
@@ -127,9 +127,8 @@ function EmptyBoard() {
           >
             Permissions API
           </a>
-          , but without using the Permissions API it works (kinda).
+          , but without using the Permissions API it works (sort of).
         </p>
-        <p>The web is a sad mess.</p>
       </div>
     </>
   );
