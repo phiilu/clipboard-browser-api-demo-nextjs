@@ -88,8 +88,14 @@ function EmptyBoard() {
             href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard">
             Clipboard API
           </a>{' '}
-          which is built into the browser. At the time of writing this only works properly in Chrome
-          and Safari. See{' '}
+          which is built into the browser. Check out my{' '}
+          <a href="https://phiilu.com/accessing-the-clipboard-in-javascript-using-the-clipboard-api">
+            blog post
+          </a>{' '}
+          to learn more about the Clipboard API.
+        </p>
+        <p>
+          At the time of writing this only works properly in Chrome and Safari. See{' '}
           <a
             target="_blank"
             rel="noreferrer noopener"
@@ -97,9 +103,7 @@ function EmptyBoard() {
             href="https://caniuse.com/clipboard">
             caniuse.com
           </a>
-        </p>
-        <p>
-          Firefox supports the Clipboard API too, but unfortionatly it does not recognise the
+          . Firefox supports the Clipboard API too, but unfortionatly it does not recognise the
           `clipboard-read` permission. See the Note on{' '}
           <a
             target="_blank"
