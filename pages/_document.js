@@ -17,7 +17,7 @@ class MyDocument extends Document {
             async
             defer
             data-domain="clipboard-api.phiilu.com"
-            src="https://p.phiilu.com/js/plausible.js"></script>
+            src="https://p.phiilu.com/js/plausible.outbound-links.js"></script>
         </body>
       </Html>
     );
