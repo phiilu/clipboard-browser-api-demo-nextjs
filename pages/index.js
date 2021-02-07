@@ -274,7 +274,7 @@ export default function Home() {
             />
           </svg>
         </a>
-        <div className="md:max-w-2xl md:mx-auto p-4 md:p-12 sm:px-6 lg:px-8 space-y-12">
+        <div className="pt-16 md:max-w-2xl md:mx-auto p-4 sm:pt-4 md:p-12 sm:px-6 lg:px-8 space-y-12">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex-1 min-w-0">
               <h2 className="text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-blue-500">
